@@ -26,6 +26,9 @@ def isValid(s):
                     total = True
             else:
                 total = False
+    if len(stack) > 0:
+        total = False
+        
     return total
 
 print('Test 1: input = \'()\' - ',isValid('()'))
